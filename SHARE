@@ -1,0 +1,27 @@
+capacity: 20
+directory: /cio/volumes
+iops:
+  min: 1000
+  max: 2000
+label:
+  cio.volume: shared
+level: 2
+local: no
+provision: thin
+type: ssd
+service:
+  compression:
+    enabled: no
+    algorithm: lzo
+  dedupe: no
+  encryption:
+    enabled: no
+  replication:
+    enabled: no
+    destination: none
+    interval: 120
+    type: synchronous
+  snapshot:
+    enabled: no
+    interval: 60
+    max: 10
